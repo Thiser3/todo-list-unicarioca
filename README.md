@@ -26,9 +26,11 @@
    ```
 
 5. Execute em um terminal dentro da pasta `client`:
-   ```python -m http.server 3000```
+   ```
+   python -m http.server 3000
+   ```
 
-6. A aplicação frontend estará rodando em `http://localhost:3000`, e a back em `http://localhost:8000`
+7. A aplicação frontend estará rodando em `http://localhost:3000`, e a back em `http://localhost:8000`
 
 ## API Documentation
 
