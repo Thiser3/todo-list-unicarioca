@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Minhas Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Minhas Tarefas</h2>
+            <button id="logout-btn" style="width: auto; background: #999;">Sair</button>
+        </header>
+
+        <div class="task-input-area">
+            <input type="text" id="task-title" placeholder="Nova tarefa..." required>
+            <input type="text" id="task-desc" placeholder="Descrição (opcional)">
+            <input type="date" id="task-date">
+            <button id="add-task-btn">+</button>
+        </div>
+
+        <ul id="task-list">
+            </ul>
+    </div>
+    <script type="module" src="js/page-dashboard.js"></script>
+    <div id="edit-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Editar Tarefa</h3>
+            <form id="edit-form">
+                <input type="hidden" id="edit-id"> <label>Título:</label>
+                <input type="text" id="edit-title" required>
+                
+                <label>Descrição:</label>
+                <input type="text" id="edit-desc">
+                
+                <label>Data:</label>
+                <input type="date" id="edit-date">
+                
+                <div class="modal-buttons">
+                    <button type="submit">Salvar</button>
+                    <button type="button" id="cancel-edit-btn" class="delete-btn">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="toast" class="toast">Sucesso!</div>
+    <div id="confirm-modal" class="modal hidden">
+        <div class="modal-content" style="text-align: center;">
+            <h3>Tem certeza?</h3>
+            <p style="margin-bottom: 20px; color: #666;">Você deseja realmente excluir esta tarefa? Essa ação não pode ser desfeita.</p>
+            
+            <div class="modal-buttons" style="justify-content: center;">
+                <button id="cancel-delete-btn" style="background: #999;">Cancelar</button>
+                
+                <button id="confirm-delete-btn" class="delete-btn" style="width: auto; padding: 10px 20px;">Sim, Excluir</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/page-dashboard.js"></script>
+</body>
+</html>
