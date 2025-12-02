@@ -1,3 +1,8 @@
+Participantes:
+Antônio José da Fonseca Antunes - Matrícula: 2024101598
+João Otávio Deveza Scaramello - Matrícula: 2024100094
+Ernani da Silva Cipriano - Matrícula: 2024100347
+
 ## Como Rodar a Aplicação
 1. Crie um ambiente virtual:
    ```bash
